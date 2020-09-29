@@ -357,7 +357,7 @@ termination conditions are in fact redundant if `aborts_if_is_partial = false`.
 
 ## Requires Condition
 
-The `requires` condition is a spec block member which postulates a pre-condition for a function. In contrast
+The `requires` condition is a spec block member which poscoin1_tmpates a pre-condition for a function. In contrast
 to an `aborts_if` condition, if the pre-condition of a function does not hold, the result of calling the function
 is undefined. The prover verifies that such a situation does not occur: for each call to the function, the prover
 checks that the `requires` condition holds for the given parameters and global state. In turn, when the function
@@ -392,7 +392,7 @@ on exit that the same condition holds as well.
 
 ## Ensures Condition
 
-The `ensures` condition postulates a post-condition for a function which must be satisfied when the function
+The `ensures` condition poscoin1_tmpates a post-condition for a function which must be satisfied when the function
 terminates successfully (i.e. does not abort). The prover will verify each `ensures` to this end.
 
 An example for the `ensures` condition is the following:
@@ -507,7 +507,7 @@ If the `invariant` condition is applied to a struct, it expresses a well-formedn
 Any instance of this struct which is currently not mutated will satisfy this property (with exceptions as
 outlined below).
 
-For example, we can postulate an invariant on our counter that it never must exceed the value of 127:
+For example, we can poscoin1_tmpate an invariant on our counter that it never must exceed the value of 127:
 
 ```move
 spec struct Counter {
